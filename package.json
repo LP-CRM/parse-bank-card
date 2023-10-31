@@ -1,0 +1,16 @@
+{
+  "name": "parse-bank-card",
+  "version": "1.0.0",
+  "description": "JS module to process bank card numbers i.e. formatting and fetch data by bank card",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LP-CRM/parse-bank-card.git"
+  },
+  "main": "bankCardNumber.js",
+  "types": "bankCardNumber.d.ts",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "Shpyra Evgeniy <evgeniyshpyra@gmail.com>",
+  "license": "MIT"
+}
