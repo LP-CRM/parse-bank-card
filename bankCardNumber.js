@@ -30,12 +30,12 @@ const getBankData = (value) => {
     if (typeof value !== "string") return incorrect
     const cardNumberWithoutGaps = value.replace(/\s/g, "")
     const clearedCardNumber = cardNumberWithoutGaps.replace(/[^0-9\s]/g, "")
+    if (clearedCardNumber.length === 0) return empty
     if (
         cardNumberWithoutGaps.length !== clearedCardNumber.length ||
         clearedCardNumber.length !== 16
     )
         return incorrect
-    if (clearedCardNumber.length === 0) return empty
     if (!bunkCardValidators(clearedCardNumber)) return incorrect
 
     const currentBin = clearedCardNumber.slice(0, 6)
