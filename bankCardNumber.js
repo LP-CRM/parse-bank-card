@@ -10,8 +10,8 @@ const formatBankCard = (value) => {
     let valueWithoutGaps = value.replace(/\s/g, "")
     valueWithoutGaps = valueWithoutGaps.replace(/[^0-9\s]/g, "")
 
-    if (valueWithoutGaps.length > 16)
-        valueWithoutGaps = valueWithoutGaps.slice(0, 16)
+    // if (valueWithoutGaps.length > 16)
+    //     valueWithoutGaps = valueWithoutGaps.slice(0, 16)
 
     let valueWithGaps = ""
     let spacePositions = [4, 8, 12]
